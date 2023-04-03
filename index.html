@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/style.css">
+<title>Anshuman Mohanty | EE Calculator</title>
+</head>
+
+<body>
+
+<center>
+<h1 class="title">Engineering Economics Calculator</h1>
+<p class="author">By Anshuman Mohanty</p>
+<div class="container">
+    <label for="factor">Factor Type:</label>
+    <select id="factor" name="factor">
+      <option value="P/F">P/F</option>
+      <option value="P/A">P/A</option>
+      <option value="P/G">P/G</option>
+      <option value="F/P">F/P</option>
+      <option value="F/A">F/A</option>
+      <option value="F/G">F/G</option>
+      <option value="A/P">A/P</option>
+      <option value="A/F">A/F</option>
+      <option value="A/G">A/G</option>
+    </select>
+    <br>
+
+    <label for="i">Interest Rate (i):</label>
+    <input type="number" id="i" name="i" placeholder="i%">
+    <br>
+
+    <label for="n">Number of Interest Periods (N):</label>
+    <input type="number" id="n" name="n" placeholder="n">
+    <br>
+
+    <b><p id="result"></p></b>
+
+    <button onclick="calculate_factor()">Calculate</button>
+</div>
+</center>
+
+
+</body>
+<script src="./js/script.js"></script>
+</html>
